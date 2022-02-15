@@ -36,6 +36,7 @@ module.exports = {
     new RefreshWebpackPlugin(),
     new webpack.DefinePlugin({
       "process.env.NODE_ENV": JSON.stringify("development"),
+      // https://yamoo9.gitbook.io/webpack/webpack/webpack-plugins/manage-env-variables
     }),
   ],
   devtool: "eval-cheap-module-source-map",
