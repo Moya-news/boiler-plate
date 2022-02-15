@@ -17,4 +17,8 @@ psd
 thumb
 sketch
 
+
+### dotenv ###
+.env
+
 # End of https://www.toptal.com/developers/gitignore/api/react
