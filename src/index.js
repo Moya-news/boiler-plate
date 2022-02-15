@@ -1,9 +1,9 @@
-import React, { useRef } from "react";
+import React from "react";
 import reactDOM from "react-dom";
 import { Provider } from "react-redux";
 import Example from "./components/example";
 import GlobalStyle from "./GlobalStyle";
-import configureStore from "./store";
+import configureStore from "./store/store";
 
 const store = configureStore();
 const App = () => {
