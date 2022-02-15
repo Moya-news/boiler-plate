@@ -1,16 +1,20 @@
 import React, { useRef } from "react";
 import reactDOM from "react-dom";
-import Hi from "./components/example";
+import { Provider } from "react-redux";
+import Example from "./components/example";
 import GlobalStyle from "./GlobalStyle";
-import "./style.css";
+import configureStore from "./store";
 
+const store = configureStore();
 const App = () => {
   const exampleMessage = "Hello World";
   return (
-    <>
-      <GlobalStyle />
-      <Hi exampleMessage={exampleMessage} />
-    </>
+    <React.StrictMode>
+      <Provider store={store}>
+        <GlobalStyle />
+        <Example exampleMessage={exampleMessage} />
+      </Provider>
+    </React.StrictMode>
   );
 };
 
