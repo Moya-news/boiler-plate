@@ -2,10 +2,10 @@ const path = require("path");
 // 절대경로를 위한 모듈을 import
 const RefreshWebpackPlugin = require("@pmmmwh/react-refresh-webpack-plugin");
 // 핫리로딩을 위한 플러그인
-require("dotenv").config();
+const webpack = require("webpack");
 
 module.exports = {
-  mode: process.env.mode === "development" ? "development" : "production",
+  mode: "development",
   // 모드
   entry: "./src/index.js",
   //진입점이 될 파일
@@ -32,11 +32,13 @@ module.exports = {
       },
     ],
   },
-  plugins: [new RefreshWebpackPlugin()],
-  devtool:
-    process.env.mode === "development"
-      ? "eval-cheap-module-source-map"
-      : "source-map",
+  plugins: [
+    new RefreshWebpackPlugin(),
+    new webpack.DefinePlugin({
+      "process.env.NODE_ENV": JSON.stringify("development"),
+    }),
+  ],
+  devtool: "eval-cheap-module-source-map",
   // 소스를 매핑하는 방법
   // 개발모드냐 프로덕션 모드냐에 따라 다르게함
   // https://webpack.kr/configuration/devtool/
