@@ -50,6 +50,15 @@ npm run dev
 └── ...
 ```
 
+## 절대경로
+
+총 4가지 절대경로를 설정하였습니다.
+
+- @components : src/components
+- @reducers: src/reducers
+- @sagas: src/sagas
+- @utils: src/utils
+
 ## 사용된 라이브러리
 
 - css-in-js를 작성하는데에 `@emotion/styled`를 이용합니다.
