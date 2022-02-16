@@ -5,12 +5,10 @@
 ## 개요
 
 1. 직관적인 설정 이해와 커스터마이징을 위해 CRA 없이 webpack,babel,react로 리액트 초기환경 설정을 하였습니다.
-2. prettier , eslint를 이용하여 코드 컨벤션을 설정할 예정입니다.
-3. <s>redux</s>, redux-saga를 위한 코드 구조를 설정할 예정입니다.
+2. prettier , eslint를 이용하여 코드 컨벤션을 설정하였습니다.
+3. redux, redux-saga를 위한 코드 패턴과 예시를 작성하였습니다.
 
 ## 폴더구조
-
-작성중...
 
 ```
 ├── node_modules
@@ -42,6 +40,11 @@
 - css-in-js를 작성하는데에 `@emotion/styled`를 이용합니다.
 - 상태관리에 `redux`와 `redux-saga`를 이용합니다.
 - js로 작업할 때는 `prop-types`를 이용하여 component의 props타입을 지정합니다.
+
+## 추가 예정인 항목들
+
+- webpack과 babel의 target 설정을 통해 브라우저나 es6문법들로 번들링하도록 할 예정입니다.
+- cors 에러가 발생할 경우 webpack-dev-server의 설정을 통해 proxy를 사용할 수 있습니다.( 이 부분은 당장 적용할 수 있습니다. )
 
 ## 참조
 
