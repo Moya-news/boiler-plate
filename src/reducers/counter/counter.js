@@ -22,12 +22,13 @@ const counter = (state = initialState, action) =>
         draft.increaseError = null;
         break;
       case INCREASE_SUCCESS_ACTION:
-        draft.increaseLoading = true;
-        draft.inreaseSuccess = false;
+        draft.increaseLoading = false;
+        draft.inreaseSuccess = true;
         draft.count = draft.count + action.data;
         break;
       case INCREASE_FAILURE_ACTION:
         draft.increaseLoading = false;
+        draft.inreaseSuccess = false;
         draft.increaseError = action.error;
         break;
       default:

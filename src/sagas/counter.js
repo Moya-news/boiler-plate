@@ -8,10 +8,12 @@ import {
 // 제너레이터 함수를 사용하여 작성해주시면 됩니다.
 // delay를 통해 비동기 호출을 임의로 재현해보았습니다.
 // 실제 프로덕트를 만들 때는 이 부분에 api 호출로 데이터를 받아오도록 하면 됩니다.
+// Handler를 붙여주셨으면 합니다.
 function* increaseCountHandler(action) {
   try {
-    console.log(action.data);
+    console.log("before axios");
     yield delay(1000);
+    console.log("after axios");
     yield put({
       type: INCREASE_SUCCESS_ACTION,
       data: action.data,
