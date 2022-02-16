@@ -3,12 +3,12 @@ const path = require("path");
 const RefreshWebpackPlugin = require("@pmmmwh/react-refresh-webpack-plugin");
 // 핫리로딩을 위한 플러그인
 const webpack = require("webpack");
-require("@babel/polyfill");
+// require("@babel/polyfill");
 
 module.exports = {
   mode: "development",
   // 모드
-  entry: ["@babel/polyfill", "./src/index.js"],
+  entry: "./src/index.js",
   //진입점이 될 파일
   output: {
     path: path.join(__dirname, "public"),

@@ -58,7 +58,6 @@ npm run dev
 
 ## 추가 예정인 항목들
 
-- webpack과 babel의 target 설정을 통해 브라우저나 es6문법들로 번들링하도록 할 예정입니다.
 - cors 에러가 발생할 경우 webpack-dev-server의 설정을 통해 proxy를 사용할 수 있습니다.( 이 부분은 당장 적용할 수 있습니다. )
 
 ## 참조
