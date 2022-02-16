@@ -1,12 +1,19 @@
 ## 주제
 
-`내 책상 위의 애널리스트, MoYa for Desktop📈`의 협업을 위한 boiler-plate repo입니다.
+`내 책상 위의 애널리스트, MoYa for Desktop📈`의 협업을 위한 boiler-plate 입니다.
 
 ## 개요
 
 1. 직관적인 설정 이해와 커스터마이징을 위해 CRA 없이 webpack,babel,react로 리액트 초기환경 설정을 하였습니다.
 2. prettier , eslint를 이용하여 코드 컨벤션을 설정하였습니다.
 3. redux, redux-saga를 위한 코드 패턴과 예시를 작성하였습니다.
+4. redux-devtools-extension을 적용하였습니다.
+
+   [redux devtools](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd)크롬 익스텐션을 설치하여야 합니다.
+
+   설치가 완료되면 개발자 도구를 통해 접근할 수 있습니다.
+
+   ![image](https://user-images.githubusercontent.com/79688915/154262098-6488e419-96b6-4284-8a58-ea1783021073.png)
 
 ## 폴더구조
 
