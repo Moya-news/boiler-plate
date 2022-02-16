@@ -29,8 +29,7 @@
 │   │   │    └── [reducername].js // reducer를 반환
 │   │   └── rootReducer.js // root reducer를 반환
 │   ├── sagas // saga를 저장하는 폴더
-│   │   │── [saganame]
-│   │   │    └── [saganame].js // saga를 반환
+│   │   │── [saganame].js
 │   │   └── rootSaga.js // root saga를 반환
 │   └── store // store를 저장하는 폴더
 │   │   └── store.js
