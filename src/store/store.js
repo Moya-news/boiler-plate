@@ -1,14 +1,14 @@
-import { applyMiddleware, createStore, compose } from 'redux';
-import createSagaMiddleware from 'redux-saga';
-import { composeWithDevTools } from 'redux-devtools-extension';
-import rootReducer from '../reducers/rootReducer';
-import rootSaga from '../sagas/rootSaga';
+import { applyMiddleware, createStore, compose } from "redux";
+import createSagaMiddleware from "redux-saga";
+import { composeWithDevTools } from "redux-devtools-extension";
+import rootReducer from "../reducers/rootReducer";
+import rootSaga from "../sagas/rootSaga";
 
-const configureStore = (context) => {
+const configureStore = () => {
   const sagaMiddleware = createSagaMiddleware();
   const middlewares = [sagaMiddleware];
   const enhancer =
-    process.env.NODE_ENV === 'development'
+    process.env.NODE_ENV === "development"
       ? composeWithDevTools(applyMiddleware(...middlewares))
       : compose(applyMiddleware(...middlewares));
 

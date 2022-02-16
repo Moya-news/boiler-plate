@@ -6,6 +6,7 @@ import GlobalStyle from "./GlobalStyle";
 import configureStore from "./store/store";
 
 const store = configureStore();
+
 const App = () => {
   const exampleMessage = "Hello World";
   return (

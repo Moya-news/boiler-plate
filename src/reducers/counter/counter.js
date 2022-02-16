@@ -5,6 +5,7 @@ import {
   INCREASE_SUCCESS_ACTION,
 } from "./actionType";
 
+// reducer의 초기 상태
 const initialState = {
   increaseLoading: false,
   inreaseSuccess: true,
