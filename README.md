@@ -34,7 +34,7 @@ npm run dev
 │   ├── GlobalStyle.js // reset.css
 │   ├── components // 재사용 가능한 컴포넌트를 저장하는 폴더
 │   │   └── example
-│   │       ├── index.js // JSX를 반환하는 컴포넌트
+│   │       ├── index.jsx // JSX를 반환하는 컴포넌트
 │   │       └── style.js // css-in-js를 저장하는 폴더
 │   ├── reducers // reducer를 저장하는 폴더
 │   │   │── [reducername]

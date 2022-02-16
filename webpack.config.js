@@ -16,6 +16,15 @@ module.exports = {
     filename: "bundle.js",
     //결과물의 이름
   },
+  resolve: {
+    extensions: [".js", ".jsx", "json"],
+    alias: {
+      "@components": path.resolve(__dirname, "src/components"),
+      "@reducers": path.resolve(__dirname, "src/reducers"),
+      "@sagas": path.resolve(__dirname, "src/sagas"),
+      "@utils": path.resolve(__dirname, "src/utils"),
+    },
+  },
   module: {
     rules: [
       {

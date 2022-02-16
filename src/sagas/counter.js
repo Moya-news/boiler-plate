@@ -3,7 +3,7 @@ import {
   INCREASE_REQUEST_ACTION,
   INCREASE_SUCCESS_ACTION,
   INCREASE_FAILURE_ACTION,
-} from "../reducers/counter/actionType";
+} from "@reducers/counter/actionType";
 
 // 제너레이터 함수를 사용하여 작성해주시면 됩니다.
 // delay를 통해 비동기 호출을 임의로 재현해보았습니다.
