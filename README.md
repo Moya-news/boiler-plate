@@ -7,7 +7,7 @@
 1. 직관적인 설정 이해와 커스터마이징을 위해 CRA 없이 webpack,babel,react로 리액트 초기환경 설정을 하였습니다.
 2. prettier , eslint를 이용하여 코드 컨벤션을 설정하였습니다.
 3. redux, redux-saga를 위한 코드 패턴과 예시를 작성하였습니다.
-4. redux-devtools-extension을 적용하였습니다.
+4. @redux-devtools/extension을 적용하였습니다.
 
    [redux devtools](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd)크롬 익스텐션을 설치하여야 합니다.
 
