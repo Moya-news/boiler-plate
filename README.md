@@ -2,6 +2,14 @@
 
 `내 책상 위의 애널리스트, MoYa for Desktop📈`의 협업을 위한 boiler-plate 입니다.
 
+## 실행방법
+
+```
+git clone https://github.com/Moya-news/boiler-plate.git foldername
+cd flodername
+npm run dev
+```
+
 ## 개요
 
 1. 직관적인 설정 이해와 커스터마이징을 위해 CRA 없이 webpack,babel,react로 리액트 초기환경 설정을 하였습니다.
