@@ -36,10 +36,10 @@
 │   ├── sagas // saga를 저장하는 폴더
 │   │   │── [saganame].js
 │   │   └── rootSaga.js // root saga를 반환
-│   └── store // store를 저장하는 폴더
+│   │── store // store를 저장하는 폴더
 │   │   └── store.js
-│   └── util // 유틸 함수를 저장하는 폴더
-└──
+└───└── util // 유틸 함수를 저장하는 폴더
+
 ```
 
 ## 사용된 라이브러리
