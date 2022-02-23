@@ -3,6 +3,9 @@ import PropTypes from "prop-types";
 import { ExampleWrapper } from "./style";
 import { useDispatch, useSelector } from "react-redux";
 import { increaseCount } from "@reducers/counter/actionType";
+import dummy from "@images/dummy.png";
+// 이미지를 모듈처럼 불러올 수 있습니다.
+
 const Example = ({ exampleMessage }) => {
   const count = useSelector((state) => state.counter.count);
   const dispatch = useDispatch();
@@ -15,6 +18,7 @@ const Example = ({ exampleMessage }) => {
       <div>
         <button onClick={onClickButton}>누르면 카운트가 증가해요</button>
       </div>
+      <img src={dummy} />
       <div>{exampleMessage}</div>
     </ExampleWrapper>
   );

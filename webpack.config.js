@@ -19,6 +19,7 @@ module.exports = {
   resolve: {
     extensions: [".js", ".jsx", "json"],
     alias: {
+      "@images": path.resolve(__dirname, "public/images"),
       "@components": path.resolve(__dirname, "src/components"),
       "@reducers": path.resolve(__dirname, "src/reducers"),
       "@sagas": path.resolve(__dirname, "src/sagas"),
@@ -39,6 +40,10 @@ module.exports = {
       {
         test: /\.sass$/,
         use: ["style-loader", "css-loader", "sass-loader"],
+      },
+      {
+        test: /\.(png|jpg|gif|svg)$/,
+        loader: "file-loader",
       },
     ],
   },
